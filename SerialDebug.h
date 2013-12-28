@@ -5,14 +5,10 @@
 #include "AbstractDebug.h"
 
 class SerialDebug : public AbstractDebug {
-   public:
-      SerialDebug(long baudrate);
-   private:
-      void print(String type, String message);
-   public:
-      void info(String message);
-      void warn(String message);
-      void error(String message);
+	public:
+		SerialDebug(long baudrate);
+	private:
+		void print(String type, String message);
 };
 
 #endif
